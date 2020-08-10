@@ -1,0 +1,19 @@
+# Application configuration.
+server:
+  port: 8080
+
+# Mongo DB configuration
+spring:
+  data:
+    mongodb:
+      host: mongodb
+      port: 27017
+      database: my-assessment
+
+# Logging configuration
+logging:
+  level:
+    com.bol.assessment.mancala: INFO
+    org.springframework.web: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
